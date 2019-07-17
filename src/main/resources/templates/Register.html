@@ -11,13 +11,13 @@
 	<h3 class="h4 text-center">Welcome To Customer Register Page</h3>
 	<form action="#" th:action="@{/customer/save}" method="Post" th:object="${customer}" class="form-group">
 		<label class="text-info">Enter Customer Code</label>
-		<input type="text" th:field="*{custCode}" class="form-control" />
+		<input type="text" th:field="*{custCode}" class="form-control" placeholder="Enter customer Code" />
 		<label class="text-info">Enter Customer Name</label>
-		<input type="text" th:field="*{custName}" class="form-control"/>
+		<input type="text" th:field="*{custName}" class="form-control"placeholder="Enter customer Name"/>
 		<label class="text-info">Enter Customer Income</label>
-		<input type="number" th:field="*{custIncome}" class="form-control"/>
+		<input type="number" th:field="*{custIncome}" class="form-control"placeholder="Enter customer Income"/>
 		<label class="text-info">Enter Customer Address</label>
-		<textarea th:field="*{note}" class="form-control" ></textarea>
+		<textarea th:field="*{note}" class="form-control" placeholder="Enter Customer Address"></textarea>
 		<input type="submit" class="btn btn-primary" value="Register"/>
 		<input type="reset" class="btn btn-warning" value="Clear Form"/>
 	</form>
